@@ -314,19 +314,19 @@ class OthelloGUI:
             disprenum = 0
             if self.othello.isOnBoard(x0, y0 + 1) and board[x0][y0 + 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0, y0 - 1) and board[x0][y0 - 1] == 'none':
+            if self.othello.isOnBoard(x0, y0 - 1) and board[x0][y0 - 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 + 1, y0) and board[x0 + 1][y0] == 'none':
+            if self.othello.isOnBoard(x0 + 1, y0) and board[x0 + 1][y0] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 - 1, y0) and board[x0 - 1][y0] == 'none':
+            if self.othello.isOnBoard(x0 - 1, y0) and board[x0 - 1][y0] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 + 1, y0 + 1) and board[x0 + 1][y0 + 1] == 'none':
+            if self.othello.isOnBoard(x0 + 1, y0 + 1) and board[x0 + 1][y0 + 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 - 1, y0 - 1) and board[x0 - 1][y0 - 1] == 'none':
+            if self.othello.isOnBoard(x0 - 1, y0 - 1) and board[x0 - 1][y0 - 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 - 1, y0 + 1) and board[x0 - 1][y0 + 1] == 'none':
+            if self.othello.isOnBoard(x0 - 1, y0 + 1) and board[x0 - 1][y0 + 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 + 1, y0 - 1) and board[x0 + 1][y0 - 1] == 'none':
+            if self.othello.isOnBoard(x0 + 1, y0 - 1) and board[x0 + 1][y0 - 1] == 'none':
                 disprenum += 1
             return disprenum
         
@@ -435,19 +435,19 @@ class OthelloGUI:
             disprenum = 0
             if self.othello.isOnBoard(x0, y0 + 1) and board[x0][y0 + 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0, y0 - 1) and board[x0][y0 - 1] == 'none':
+            if self.othello.isOnBoard(x0, y0 - 1) and board[x0][y0 - 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 + 1, y0) and board[x0 + 1][y0] == 'none':
+            if self.othello.isOnBoard(x0 + 1, y0) and board[x0 + 1][y0] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 - 1, y0) and board[x0 - 1][y0] == 'none':
+            if self.othello.isOnBoard(x0 - 1, y0) and board[x0 - 1][y0] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 + 1, y0 + 1) and board[x0 + 1][y0 + 1] == 'none':
+            if self.othello.isOnBoard(x0 + 1, y0 + 1) and board[x0 + 1][y0 + 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 - 1, y0 - 1) and board[x0 - 1][y0 - 1] == 'none':
+            if self.othello.isOnBoard(x0 - 1, y0 - 1) and board[x0 - 1][y0 - 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 - 1, y0 + 1) and board[x0 - 1][y0 + 1] == 'none':
+            if self.othello.isOnBoard(x0 - 1, y0 + 1) and board[x0 - 1][y0 + 1] == 'none':
                 disprenum += 1
-            elif self.othello.isOnBoard(x0 + 1, y0 - 1) and board[x0 + 1][y0 - 1] == 'none':
+            if self.othello.isOnBoard(x0 + 1, y0 - 1) and board[x0 + 1][y0 - 1] == 'none':
                 disprenum += 1
             return disprenum
         
@@ -633,7 +633,7 @@ class OthelloGUI:
                 return action,MIN
         
         board = self.getBoardCopy(self.mainBoard)
-        self.AI_player = '2020110734-曹'
+        self.AI_player = 'best-曹'
         action,res=alphabeta(0,board,tile,-1e9,1e9)            
         print(action)
         return action
